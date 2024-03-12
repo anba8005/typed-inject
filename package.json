@@ -5,6 +5,7 @@
   "main": "dist/src/index.js",
   "type": "module",
   "scripts": {
+    "postinstall": "npm add typescript && npm run build",
     "all": "npm run clean && npm run build && npm run lint && npm run test && npm run stryker",
     "start": "tsc -b -w",
     "clean": "rimraf dist",
